@@ -202,6 +202,12 @@ body {
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  .animais-descricao {
+    grid-column: 1;
+  }
+}
+
 @media (max-width: 700px) {
   .grid-container {
     grid-template-columns: 1fr;
@@ -209,13 +215,14 @@ body {
 
   .menu,
   .grid-section,
-  .copy {
+  .copy,
+  .titulo {
     grid-column: 1;
   }
 
   .grid-section {
-    display: block;
-    grid-template-columns: none;
+    display: grid;
+    grid-template-columns: auto 1fr;
     grid-gap: 0;
   }
 
