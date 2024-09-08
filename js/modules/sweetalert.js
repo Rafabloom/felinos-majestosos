@@ -1,4 +1,3 @@
-// sweetalert.js
 import Swal from 'sweetalert2';
 
 export default class SweetAlert {
@@ -14,8 +13,14 @@ export default class SweetAlert {
         Swal.fire({
           title: 'Atenção!',
           text: 'Esses links são somente para o visual e não funcionam.',
-          icon: 'info',
+          icon: 'error',
           confirmButtonText: 'OK',
+          customClass: {
+            title: 'swal2-title-custom',
+            confirmButton: 'swal2-confirm-custom',
+            icon: 'swal2-icon-custom',
+          },
+          iconColor: '#ff8c00'
         });
       });
     });
