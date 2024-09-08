@@ -25,6 +25,7 @@
   box-shadow: 0 0 0 10px white;
   position: relative;
   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @keyframes modal {
