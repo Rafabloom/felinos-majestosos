@@ -11,18 +11,25 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:700|Playfair+Display+SC" rel="stylesheet">
 
     <script>document.documentElement.className += ' js';</script>
 
+    <!-- SWEETALERT CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <!-- ESTILO CUSTOMIZADO -->
     <link rel="stylesheet" type="text/css" href="css/estilo.css" />
 
 </head>
 
 <body>
 
+    <!-- CONTAINER -->
     <div class="grid-container">
 
+        <!-- MENU -->
         <nav class="menu" data-menu="suave">
 
             <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
@@ -40,11 +47,12 @@
                 </li>
                 <li><a href="#faq">Faq</a></li>
                 <li><a href="#contato">Contato</a></li>
-                <li><a data-modal="abrir" href="login.html">Login →</a></li>
+                <li><a data-modal="abrir" href="login.html">Login <span class="arrow-black"></span></a></li>
             </ul>
 
         </nav>
 
+        <!-- SEÇÃO ANIMAIS -->
         <section class="grid-section animais" id="animais" data-anime="scroll">
 
             <h1 class="titulo">Felinos Majestosos</h1>
@@ -70,6 +78,7 @@
                 </li>
             </ul>
 
+            <!-- DESCRIÇÃO DOS ANIMAIS -->
             <div class="animais-descricao" data-tab="content">
 
                 <section data-anime="show-right">
@@ -172,25 +181,34 @@
 
         </section>
 
+        <!-- INÍCIO SEÇÃO FAQ -->
         <section class="grid-section faq" data-anime="scroll" id="faq">
 
             <h1 class="titulo">FAQ</h1>
 
             <dl class="faq-lista" data-anime="accordion">
-                <dt>Qual a idade dos animais?</dt>
-                <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte
-                    médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
-                <dt>Eles são fantásticos?</dt>
-                <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos
-                    felinos, que se adaptam à visão noturna.</dd>
-                <dt>Como entram em contato?</dt>
-                <dd>Essa página é puramente fictícia, inspirada no conteúdo das aulas de JavaScript do curso Origamid.
-                    Todos os animais aqui apresentados são grandes felinos, conhecidos por suas características únicas e
-                    impressionantes.</dd>
+                <dt>Como os felinos ajudam a manter o equilíbrio ecológico?</dt>
+                <dd>Os felinos desempenham um papel vital no controle populacional de outras espécies, especialmente
+                    herbívoros e pequenos mamíferos. Ao caçar presas, eles evitam a superpopulação, o que mantém o
+                    equilíbrio dos ecossistemas. Além disso, como predadores de topo, sua presença regula o
+                    comportamento de outras espécies, garantindo a saúde do ambiente natural.</dd>
+
+                <dt>Por que os tigres siberianos estão em perigo de extinção?</dt>
+                <dd>Os tigres siberianos enfrentam o risco de extinção devido à perda de habitat, caça furtiva e redução
+                    de suas presas naturais. A expansão das atividades humanas, como a desflorestação e a caça ilegal,
+                    diminui seu território e coloca em perigo suas populações. Esforços de conservação, como programas
+                    de proteção e reintrodução, são essenciais para salvar essa majestosa espécie.</dd>
+
+                <dt>Quais são as principais características que permitem ao guepardo atingir alta velocidade?</dt>
+                <dd>O guepardo é o animal terrestre mais rápido, capaz de atingir até 100 km/h. Sua estrutura corporal é
+                    adaptada para a velocidade: tem pernas longas, coluna flexível, pulmões e coração grandes, e garras
+                    semirretráteis que lhe dão tração. Além disso, sua cauda atua como um leme, ajudando a manter o
+                    equilíbrio durante as corridas rápidas.</dd>
             </dl>
 
         </section>
 
+        <!-- INÍCIO SEÇÃO GALERIA DE IMAGENS -->
         <section class="grid-section galeria" data-anime="scroll">
             <ul class="custom-controls">
                 <li><img src="img/slide/foto1-thumb.jpg" alt=""></li>
@@ -218,38 +236,42 @@
 
         </section>
 
+        <!-- INÍCIO SEÇÃO NÚMEROS (de cada animais) -->
         <section class="grid-section numeros" data-anime="scroll">
             <h1 class="titulo">Números</h1>
             <div class="numeros-grid">
             </div>
         </section>
 
+        <!-- INÍCIO SEÇÃO CONTATO -->
         <section class="grid-section contato" data-anime="scroll" id="contato">
             <h1 class="titulo">Contato</h1>
             <div class="mapa" data-tooltip aria-label="Endereço próximo ao estacionamento.">
                 <img src="img/mapa.png">
             </div>
             <ul class="dados">
-                <li>contato@origamid.com</li>
-                <li>+55 (21) 9999-9999</li>
-                <li>Rua do Conde, nº 21</li>
-                <li>Rio de Janeiro - RJ</li>
-                <li>Doe <span class="btc-preco">0</span> bitcoin para nos ajudar</li>
-                <li data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sex das 8 às 18</li>
+                <li>rafinha_matos5@hotmail.com</li>
+                <li>+55 (11) 99999-9999</li>
+                <li>Rua Bem Pertinho, nº 35</li>
+                <li>São Paulo - SP</li>
+                <li>Doe <span class="btc-preco">0</span> bitcoins para nos ajudar!</li>
+                <li data-semana="1,2,3,4,5,6" data-horario="7,21">Seg à Sáb das 7 às 21</li>
             </ul>
         </section>
 
         <footer class="copy">
+            <p>Rafael Matos - 2024</p>
             <p>Todos os direitos reservados.</p>
         </footer>
 
     </div>
 
+    <!-- MODAL (LOGIN) -->
     <section class="modal-container" data-modal="container">
         <div class="modal">
-            <button data-modal="fechar" class="fechar">X</button>
+            <button data-modal="fechar" class="fechar"></button>
             <form action="">
-                <label for="email">Email</label>
+                <label for="email">E-mail</label>
                 <input type="text" for="email" id="email">
                 <label for="senha">Senha</label>
                 <input type="password" for="senha" id="senha">
@@ -257,6 +279,9 @@
             </form>
         </div>
     </section>
+
+    <!-- SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
 
     <script src="./main.js"></script>
 

@@ -26,9 +26,10 @@
 .dropdown-menu {
   position: absolute;
   top: 38px;
-  background: #E54;
+  background: #F7E300;
   border: 2px solid #333;
   z-index: 200;
+  pointer-events: auto;
 }
 
 .dropdown-menu::before {
@@ -40,9 +41,17 @@
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid #E54;
+  border-bottom: 10px solid #F7E300;
 }
 
 .dropdown-menu li a:hover {
-  color: white;
+  color: #8a4000;
+}
+
+@media (max-width: 700px) {
+  [data-dropdown] .dropdown-menu {
+    display: block;
+    animation: show-up .3s forwards;
+    cursor: pointer;
+  }
 }
