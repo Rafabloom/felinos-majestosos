@@ -402,3 +402,25 @@ body {
   width: 8px;
   height: 10px;
 }
+
+/* SWEET ALERT PERSONALIZAÇÕES */
+.swal2-title-custom {
+  color: #ff8c00;
+  text-transform: uppercase;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.swal2-confirm-custom {
+  background-color: #ff8c00;
+}
+
+.swal2-icon-custom {
+  background-color: #ffffff;
+  border-color: #ff8c00 !important;
+}
+
+.swal2-html-container {
+  font-family: monospace;
+  font-size: 1rem !important;
+  color: #000000 !important;
+}
