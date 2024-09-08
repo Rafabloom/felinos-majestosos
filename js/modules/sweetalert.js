@@ -12,7 +12,7 @@ export default class SweetAlert {
         event.preventDefault();
         Swal.fire({
           title: 'Atenção!',
-          text: 'Esses links são somente para o visual e não funcionam.',
+          text: 'Os links do Menu Dropdown são somente para o visual e não funcionam.',
           icon: 'error',
           confirmButtonText: 'OK',
           customClass: {
